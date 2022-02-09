@@ -217,11 +217,14 @@ body {
 }
 
 .special-description {
-  font-size: 35px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
   width: 40%;
-  line-height: 1.5;
+  line-height: 1.4;
+  text-align: left;
 }
 
 /* SPECIAL SERVICES STYLES */
@@ -236,9 +239,9 @@ body {
 .service-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 25%;
-  padding: 50px 40px 200px 40px;
+  padding: 50px 20px 230px 20px;
   background: linear-gradient(
     180deg,
     rgba(54, 56, 131, 1) 0%,
@@ -258,7 +261,6 @@ body {
   background: white;
   border-radius: 50%;
   box-shadow: inset 0px 0px 3px 0px #000, 0px 10px 50px 0px #000;
-  margin-left: 30px;
 }
 
 .black-circle {
@@ -281,7 +283,7 @@ body {
 }
 
 .middle {
-  left: 25px;
+  left: -5px;
   top: -35px;
 }
 
@@ -292,9 +294,8 @@ body {
 .card-heading {
   color: white;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   margin: 30px 0 15px 0;
-  width: 60%;
   line-height: 1.2;
   letter-spacing: 2px;
 }
@@ -303,6 +304,8 @@ body {
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.7;
   letter-spacing: 0.5px;
+  text-align: center;
+  font-size: 19px;
 }
 
 .fa-bolt,
@@ -321,11 +324,192 @@ body {
 
 .raised {
   position: relative;
-  top: -100px;
+  top: -110px;
   background: white;
-  border-top-right-radius: 50%;
-  padding: 150px 0px 500px 100px;
+  border-top-right-radius: 500px;
+}
+
+.raised-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 100px 0 50px 225px;
 }
 
 .raised-heading {
+  color: #464975;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.raised-text {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  color: rgba(70, 73, 117, 0.7);
+  width: 70%;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.interests {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 80px 225px;
+}
+
+.interests-heading {
+  color: #464975;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.interests-icons-wrapper {
+  display: flex;
+  margin: 30px 0;
+}
+
+.interests-icons-wrapper i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 110px;
+  font-size: 50px;
+  margin: 0 30px;
+  color: rgba(27, 33, 121, 0.7);
+  border: 2px solid rgba(27, 33, 121, 0.7);
+  border-radius: 50%;
+  margin: 0 0 25px 0;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.icon-text {
+  margin: 0;
+  color: rgba(27, 33, 121, 0.7);
+}
+
+/* PROJECTS STYLES */
+
+.projects {
+  position: relative;
+  padding-bottom: 300px;
+}
+
+.main-board {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    170deg,
+    rgba(231, 236, 240, 1) 0%,
+    rgba(215, 219, 230, 1) 60%,
+    rgba(178, 181, 205, 1) 100%
+  );
+  height: 450px;
+  width: 970px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: -10px 8px 24px -8px rgba(83, 83, 83, 0.7);
+}
+
+.main-board-borders {
+  display: block;
+  height: 455px;
+  width: 973px;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(231, 236, 240) 0%,
+    rgb(193, 193, 193) 100%
+  );
+}
+
+.side-board {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  right: 280px;
+  width: 240px;
+  background: #373682;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.side-board-project-details {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+.side-board-read-more {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.project-details {
+  position: absolute;
+  right: 40px;
+  top: 265px;
+  width: 235px;
+}
+
+.project-name {
+  font-size: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: white;
+  font-weight: 600;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.projects-nav {
+  position: absolute;
+  top: 25px;
+  right: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-angle-up,
+.fa-angle-down {
+  margin: 10px 0;
+  color: darkgray;
+  font-size: 18px;
+}
+
+/* DEMO CIRCLE STYLE */
+
+
+.fa-circle {
+  font-size: 10px;
+  margin: 5px 0;
+  color: lightgray;
+}
+
+.fa-circle:nth-child(2) {
+  color: #373682;
 }
