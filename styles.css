@@ -234,6 +234,8 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 60px 0 0 0;
+  position: relative;
+  height: 560px;
 }
 
 .service-card {
@@ -241,13 +243,15 @@ body {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  padding: 50px 20px 230px 20px;
+  padding: 50px 20px 310px 20px;
   background: linear-gradient(
     180deg,
     rgba(54, 56, 131, 1) 0%,
     rgba(50, 51, 116, 1) 100%
   );
   margin: 0 5px;
+  position: absolute;
+  z-index: -1;
 }
 
 .icon-wrapper {
@@ -276,6 +280,14 @@ body {
   );
   border-radius: 50%;
   box-shadow: 0px 0px 30px 0px #1b1d68;
+}
+
+.card-left {
+  left: 10%;
+}
+
+.card-right {
+  right: 10%;
 }
 
 .left {
@@ -324,7 +336,6 @@ body {
 
 .raised {
   position: relative;
-  top: -110px;
   background: white;
   border-top-right-radius: 500px;
 }
@@ -336,21 +347,27 @@ body {
   padding: 100px 0 50px 225px;
 }
 
-.raised-heading {
+.raised-heading,
+.work-heading {
   color: #464975;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: bolder;
 }
 
-.raised-text {
+.raised-text,
+.work-text {
   display: flex;
   align-items: center;
   font-size: 26px;
   color: rgba(70, 73, 117, 0.7);
-  width: 70%;
   line-height: 1.4;
   text-align: left;
+  width: 70%;
+}
+
+.work-text {
+  width: 100%;
 }
 
 .interests {
@@ -400,7 +417,7 @@ body {
 
 .projects {
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 75px;
 }
 
 .main-board {
@@ -421,10 +438,10 @@ body {
 
 .main-board-borders {
   display: block;
-  height: 455px;
+  height: 456px;
   width: 973px;
   position: absolute;
-  top: -2px;
+  top: -3px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -442,7 +459,7 @@ body {
   z-index: 1;
   top: 30px;
   right: 280px;
-  width: 240px;
+  width: 200px;
   background: #373682;
   padding: 15px 20px;
   border-radius: 8px;
@@ -487,8 +504,8 @@ body {
 
 .projects-nav {
   position: absolute;
-  top: 25px;
-  right: 190px;
+  top: 22px;
+  right: 205px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -503,7 +520,6 @@ body {
 
 /* DEMO CIRCLE STYLE */
 
-
 .fa-circle {
   font-size: 10px;
   margin: 5px 0;
@@ -512,4 +528,183 @@ body {
 
 .fa-circle:nth-child(2) {
   color: #373682;
+}
+
+/* WORK WITH US STYLES */
+
+.work-with-us {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 75px;
+}
+
+.heading-sub-wrapper {
+  width: 450px;
+  margin-right: 200px;
+}
+
+.work-heading {
+  margin: 0 0 20px 0;
+}
+
+.work-email-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  padding: 15px 20px;
+  border: 2px solid lightgray;
+}
+
+.work-email {
+  color: #373682;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.fa-envelope {
+  font-size: 30px;
+}
+
+/* REP CARD STYLES */
+
+.card-outter {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 402px;
+  height: 254px;
+  background: linear-gradient(
+    90deg,
+    rgb(231, 236, 240) 0%,
+    rgb(193, 193, 193) 100%
+  );
+  box-shadow: 10px 8px 24px -8px rgba(83, 83, 83, 0.7);
+}
+
+.card-inner {
+  position: relative;
+  top: 2px;
+  right: -2px;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(
+    90deg,
+    rgb(238, 242, 242, 1) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  padding: 100px 0 0 30px;
+}
+
+.card-name {
+  color: #464975;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0 0 10px 0;
+}
+
+.card-job-title {
+  color: rgba(70, 73, 117, 0.7);
+}
+
+.lets-connect {
+  width: 100%;
+  height: 900px;
+  background: linear-gradient(
+    180deg,
+    rgba(50, 65, 125, 1) 0%,
+    rgba(108, 125, 173, 1) 100%
+  );
+}
+
+/* LET'S CONNECT STYLES */
+
+.lets-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0 0;
+}
+
+.lets-connect__heading {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.lets-connect__post-heading {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  text-align: center;
+  width: 45%;
+  line-height: 1.5;
+}
+
+.lets-connect__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.lets-connect__form {
+  margin-left: 150px;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px 0;
+}
+
+.control-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.control-input {
+  padding: 10px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 400px;
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+.lets-connect__submit-btn {
+  background: #21254a;
+  padding: 10px 0;
+  width: 250px;
+  border: none;
+  border-radius: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.map-location {
+  object-fit: cover;
+  width: 600px;
+  height: 450px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: -10px 8px 24px -8px rgba(0, 0, 0, 0.7);
+}
+
+/* FOOTER STYLES */
+
+footer {
+  margin: 0 auto;
+  background: #292a57;
+  height: 200px;
+  width: 1300px;
 }
