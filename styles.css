@@ -1770,3 +1770,199 @@ footer {
     margin: 0 20px;
   }
 }
+
+/* 320px */
+
+@media screen and (max-width: 320px) {
+  .mobile-nav {
+    padding: 20px 20px 0 0;
+  }
+
+  .ham-line {
+    width: 35px;
+    margin: 2.5px;
+  }
+
+  .main-heading {
+    font-size: 45px;
+    margin: 30px 0px 20px 0;
+  }
+
+  .sub-heading {
+    top: 135px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .heading-btn-wrapper {
+    top: 220px;
+  }
+
+  .heading-btn {
+    width: 230px;
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .bg-shapes-wrapper {
+    width: 320px;
+  }
+
+  .mobile-nav-link {
+    font-size: 18px;
+  }
+
+  .mobile-nav-ul {
+    margin: 40px 0 0 0;
+  }
+
+  #main {
+    width: 320px;
+  }
+
+  .special-introduction {
+    padding: 0 15px 45px 15px;
+  }
+
+  .special-heading {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .speacial-sub-heading {
+    font-size: 20px;
+    position: relative;
+    top: 320px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .special-description {
+    font-size: 20px;
+    line-height: 1.4;
+    position: relative;
+    top: -80px;
+  }
+
+  .fa-arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    top: 310px;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .special-services {
+    padding: 0 0 30px 0;
+  }
+
+  .card-heading {
+    font-size: 22px;
+  }
+
+  .card-text {
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .card-left,
+  .card-middle,
+  .card-right {
+    padding: 25px 15px 55px 15px;
+  }
+
+  .raised-wrapper {
+    padding: 30px 15px 30px 15px;
+  }
+
+  .raised-heading {
+    font-size: 25px;
+  }
+
+  .raised-text {
+    line-height: 1.4;
+  }
+
+  .interests {
+    padding: 0px 15px 30px 15px;
+  }
+
+  .icon-wrapper {
+    margin: 10px;
+  }
+
+  .fa-angle-up,
+  .fa-angle-down {
+    font-size: 35px;
+  }
+
+  .fa-circle {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+
+  .project-details {
+    right: 10px;
+    top: 220px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .work-with-us {
+    padding: 0 15px 150px 15px;
+  }
+
+  .work-heading {
+    font-size: 25px;
+  }
+
+  .work-email-wrapper {
+    width: 320px;
+    right: -15px;
+    top: 520px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+  }
+
+  .rep-card {
+    position: relative;
+    right: -45px;
+    top: 5px;
+    width: 260px;
+  }
+
+  .card-outter {
+    width: 260px;
+  }
+
+  .card-inner {
+    width: 258px;
+  }
+
+  .lets-connect__heading {
+    font-size: 25px;
+  }
+
+  .control-input {
+    width: 100%;
+  }
+
+  footer {
+    width: 320px;
+  }
+
+  .footer-link {
+    margin: 0 10px;
+  }
+}
