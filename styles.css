@@ -247,6 +247,10 @@ body {
   font-size: 18px;
 }
 
+.fa-arrow-down {
+  display: none;
+}
+
 .fa-long-arrow-alt-right {
   margin: 4px 0 0 30px;
   font-size: 35px;
