@@ -1244,6 +1244,10 @@ footer {
     width: 560px;
   }
 
+  .special-introduction {
+    padding: 0 10px 70px 10px;
+  }
+
   .special-heading-wrapper {
     width: 25%;
   }
@@ -1441,12 +1445,16 @@ footer {
 
   .social-network-contacts {
     right: 50%;
-    top: -45px;
+    top: -60px;
     transform: translate(50%);
   }
 
   .social-network-contacts i {
     font-size: 35px;
     margin: 0 20px;
+  }
+
+  .rights {
+    margin-top: 30px;
   }
 }
