@@ -1508,7 +1508,7 @@ footer {
   }
 }
 
-/* 430px */
+/* 560px */
 
 @media screen and (max-width: 560px) {
   .main-nav {
@@ -1777,7 +1777,7 @@ footer {
 
 /* 320px */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   .mobile-nav {
     padding: 20px 20px 0 0;
   }
