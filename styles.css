@@ -282,11 +282,10 @@ body {
 }
 
 .left {
-  right: 30px;
+  left: -30px;
 }
 
 .middle {
-  left: -5px;
   top: -35px;
 }
 
@@ -719,7 +718,6 @@ footer {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  width: 400px;
 }
 
 .rights {
@@ -993,7 +991,201 @@ footer {
   }
 
   .social-network-contacts i {
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 15px;
+  }
+}
+
+/* 900px */
+
+@media screen and (max-width: 900px) {
+  #header {
+    height: 450px;
+  }
+
+  .main-nav {
+    width: 720px;
+  }
+
+  .nav-link {
+    margin: 0 30px;
+    font-size: 18px;
+  }
+
+  .main-heading {
+    font-size: 75px;
+    line-height: 1.1;
+  }
+
+  .sub-heading {
+    top: 210px;
+  }
+
+  .heading-btn-wrapper {
+    top: 270px;
+  }
+
+  .heading-btn {
+    width: 205px;
+    font-weight: 600;
+  }
+
+  .bg-shapes-wrapper {
+    width: 720px;
+  }
+
+  .bg-shape__circle-xxl {
+    width: 350px;
+    height: 350px;
+    right: -95px;
+    top: 235px;
+  }
+
+  .bg-shape__circle-xl {
+    width: 350px;
+    height: 350px;
+    top: 120px;
+  }
+
+  .bg-shape__circle-md {
+    width: 130px;
+    height: 130px;
+    top: 290px;
+  }
+
+  .bg-shape__circle-s {
+    top: 335px;
+    left: 250px;
+  }
+
+  #main {
+    width: 720px;
+  }
+
+  .special-services {
+    height: 500px;
+  }
+
+  .special-introduction {
+    justify-content: space-between;
+  }
+
+  .special-heading {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .special-description {
+    font-size: 18px;
+  }
+
+  .card-heading {
+    font-size: 20px;
+  }
+
+  .special-services {
+    height: 460px;
+  }
+
+  .service-card {
+    padding: 25px 15px 310px 15px;
+  }
+
+  .raised {
+    border-top-right-radius: 240px;
+  }
+
+  .raised-heading {
+    font-size: 30px;
+  }
+
+  .raised-text {
+    width: 85%;
+    font-size: 20px;
+  }
+
+  .interests-heading {
+    font-size: 22px;
+  }
+
+  .interests-icons-wrapper i {
+    width: 75px;
+    height: 75px;
+    font-size: 30px;
+  }
+
+  .main-board {
+    width: 612px;
+    height: 336px;
+  }
+
+  .main-board-borders {
+    width: 615px;
+    height: 340px;
+    top: -2px;
+  }
+
+  .side-board {
+    right: 65px;
+  }
+
+  .projects-nav {
+    right: 25px;
+  }
+
+  .project-name {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .work-heading {
+    font-size: 30px;
+  }
+
+  .work-text {
+    font-size: 20px;
+  }
+
+  .work-email-wrapper {
+    margin-top: 45px;
+  }
+
+  .card-outter {
+    width: 305px;
+    height: 200px;
+  }
+
+  .card-inner {
+    right: -2px;
+    width: 303px;
+    height: 196px;
+    padding: 120px 0 0 35px;
+  }
+
+  .lets-connect__heading {
+    font-size: 30px;
+  }
+
+  .lets-connect__post-heading {
+    width: 85%;
+  }
+
+  .control-input {
+    width: 310px;
+  }
+
+  .lets-connect__submit-btn {
+    width: 200px;
+  }
+
+  footer {
+    width: 720px;
+  }
+
+  .social-network-contacts i {
+    font-size: 23px;
   }
 }
