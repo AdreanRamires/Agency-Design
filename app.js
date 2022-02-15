@@ -5,12 +5,20 @@ const appStates = {
   menuOpenClosed: false,
 };
 
-mobileNav.addEventListener("click", () => {
-  if (appStates.menuOpenClosed) {
-    mobileNavMenu.style.display = "none";
-    appStates.menuOpenClosed = false;
-  } else {
-    mobileNavMenu.style.display = "flex";
-    appStates.menuOpenClosed = true;
+document.addEventListener("click", (e) => {
+  if (e.target.className == 'hamburger-menu') {
+    if (appStates.menuOpenClosed) {
+      appStates.menuOpenClosed = false;
+      mobileNavMenu.style.display = 'none';      
+    }
+    else {
+      appStates.menuOpenClosed = true;
+      mobileNavMenu.style.display = 'flex';
+    }
+  }else {
+    if (appStates.menuOpenClosed) {
+      mobileNavMenu.style.display = 'none';
+    }
   }
+  
 });
