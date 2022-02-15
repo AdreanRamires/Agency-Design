@@ -17,6 +17,7 @@ document.addEventListener("click", (e) => {
     }
   }else {
     if (appStates.menuOpenClosed) {
+      appStates.menuOpenClosed = false;
       mobileNavMenu.style.display = 'none';
     }
   }
