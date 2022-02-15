@@ -6,7 +6,7 @@ const appStates = {
 };
 
 document.addEventListener("click", (e) => {
-  if (e.target.className == 'hamburger-menu') {
+  if (e.target.className == 'hamburger-menu' || e.target.className == 'ham-line') {
     if (appStates.menuOpenClosed) {
       appStates.menuOpenClosed = false;
       mobileNavMenu.style.display = 'none';      
