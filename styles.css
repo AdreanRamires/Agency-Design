@@ -240,29 +240,12 @@ body {
   font-weight: 800;
 }
 
-.speacial-sub-heading {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 18px;
-}
-
-.fa-arrow-down {
-  display: none;
-}
-
-.fa-long-arrow-alt-right {
-  margin: 4px 0 0 30px;
-  font-size: 35px;
-}
-
 .special-description {
   display: flex;
-  align-items: center;
-  font-size: 23px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
-  width: 40%;
+  width: 45%;
   line-height: 1.6;
   text-align: left;
 }
@@ -354,7 +337,7 @@ body {
 }
 
 .card-text {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
   letter-spacing: 0.5px;
   font-size: 19px;
@@ -399,8 +382,8 @@ body {
 .work-text {
   display: flex;
   align-items: center;
-  font-size: 27px;
-  color: rgba(70, 73, 117, 0.7);
+  font-size: 25px;
+  color: rgba(70, 73, 117, 0.6);
   line-height: 1.6;
   text-align: left;
   width: 75%;
@@ -462,31 +445,10 @@ body {
   padding-bottom: 75px;
 }
 
-.main-board {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(
-    170deg,
-    rgba(231, 236, 240, 1) 0%,
-    rgba(215, 219, 230, 1) 60%,
-    rgba(178, 181, 205, 1) 100%
-  );
-  height: 450px;
-  width: 970px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: -10px 8px 24px -8px rgba(83, 83, 83, 0.7);
-}
-
 .main-board-borders {
-  display: block;
-  height: 456px;
-  width: 973px;
-  position: absolute;
-  top: -3px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 85%;
+  height: 450px;
+  padding: 3px 3px 3px 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background: linear-gradient(
@@ -494,14 +456,28 @@ body {
     rgb(231, 236, 240) 0%,
     rgb(193, 193, 193) 100%
   );
+  box-shadow: -10px 8px 15px -8px rgb(83, 83, 83);
+}
+
+.main-board {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(
+    170deg,
+    rgba(231, 236, 240, 1) 0%,
+    rgba(215, 219, 230, 1) 60%,
+    rgba(178, 181, 205, 1) 100%
+  );
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .side-board {
   position: absolute;
   z-index: 1;
   top: 30px;
-  right: 280px;
-  width: 200px;
+  right: -5%;
+  width: 180px;
   background: #373682;
   padding: 15px 20px;
   border-radius: 8px;
@@ -522,7 +498,7 @@ body {
 
 .project-details {
   position: absolute;
-  right: 40px;
+  right: 5%;
   top: 265px;
   width: 235px;
 }
@@ -546,44 +522,36 @@ body {
 }
 
 .projects-nav {
-  position: absolute;
-  top: 22px;
-  right: 205px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: 45px;
 }
 
-.fa-angle-up,
-.fa-angle-down {
-  margin: 10px 0;
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 25px;
+  margin: 0 20px;
   color: darkgray;
-  font-size: 18px;
 }
-
-/* DEMO CIRCLE STYLE */
 
 .fa-circle {
-  font-size: 10px;
-  margin: 5px 0;
-  color: lightgray;
-}
-
-.fa-circle:nth-child(2) {
-  color: #373682;
+  font-size: 15px;
+  color: lightgrey;
+  margin: 0 15px;
 }
 
 /* WORK WITH US STYLES */
 
 .work-with-us {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
-  padding-bottom: 75px;
+  padding: 0 0 75px 75px;
+  margin-top: 60px;
 }
 
 .heading-sub-wrapper {
-  width: 450px;
-  margin-right: 200px;
+  width: 50%;
 }
 
 .work-heading {
@@ -614,10 +582,13 @@ body {
 /* REP CARD STYLES */
 
 .card-outter {
+  width: 450px;
+  height: 275px;
+  position: absolute;
+  right: 0;
+  padding: 3px 0 3px 3px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 402px;
-  height: 254px;
   background: linear-gradient(
     90deg,
     rgb(231, 236, 240) 0%,
@@ -627,19 +598,16 @@ body {
 }
 
 .card-inner {
-  position: relative;
-  top: 2px;
-  right: -2px;
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     90deg,
     rgb(238, 242, 242, 1) 0%,
     rgb(255, 255, 255) 100%
   );
-  padding: 100px 0 0 30px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding: 35% 0 0 10%;
 }
 
 .card-name {
@@ -647,7 +615,7 @@ body {
   text-transform: uppercase;
   font-size: 25px;
   font-weight: 900;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 
 .card-job-title {
@@ -681,11 +649,11 @@ body {
 
 .lets-connect__post-heading {
   margin: 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   text-align: center;
   width: 45%;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .lets-connect__content {
@@ -864,13 +832,9 @@ footer {
     margin-bottom: 15px;
   }
 
-  .speacial-sub-heading {
-    margin-top: 0;
-  }
-
   .special-description {
     width: 60%;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .card-heading {
@@ -904,7 +868,7 @@ footer {
   }
 
   .raised-text {
-    font-size: 23px;
+    font-size: 22px;
     margin-top: 0;
   }
 
@@ -922,36 +886,24 @@ footer {
     font-size: 35px;
   }
 
-  .main-board-borders {
-    width: 734px;
-    height: 376px;
-    top: -3px;
-  }
-
-  .main-board {
-    width: 730px;
-    height: 370px;
-  }
-
-  .side-board {
-    right: 125px;
-    width: 175px;
-    padding: 10px 15px;
-  }
-
   .side-board-project-details {
     font-size: 16px;
     line-height: 1.3;
   }
 
-  .projects-nav {
-    right: 70px;
-    top: 13px;
+  .project-details {
+    right: 5%;
+    top: 225px;
   }
 
-  .project-details {
-    right: 20px;
-    top: 210px;
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 20px;
+  }
+
+  .fa-circle {
+    font-size: 15px;
+    margin: 0 15px;
   }
 
   .project-name {
@@ -967,28 +919,21 @@ footer {
     margin-right: 0;
   }
 
-  .work-with-us {
-    justify-content: space-between;
-    padding-left: 30px;
-  }
-
   .work-heading {
     font-size: 35px;
   }
 
   .work-text {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .card-outter {
-    width: 375px;
-    height: 219px;
+    width: 400px;
+  height: 250px;
   }
 
-  .card-inner {
-    right: -2px;
-    width: 373px;
-    height: 215px;
+  .heading-sub-wrapper {
+    width: 45%;
   }
 
   .card-name {
@@ -1031,7 +976,7 @@ footer {
   }
 
   footer {
-    width: 900px;
+    width: 1100px;
   }
 
   .social-network-contacts {
@@ -1108,7 +1053,7 @@ footer {
   }
 
   #main {
-    width: 720px;
+    width: 100%;
   }
 
   .special-services {
@@ -1117,6 +1062,11 @@ footer {
 
   .special-introduction {
     justify-content: space-between;
+    padding: 0 30px 70px 30px;
+  }
+
+  .special-heading-wrapper {
+    width: 30%;
   }
 
   .special-heading {
@@ -1125,7 +1075,7 @@ footer {
   }
 
   .special-description {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .card-heading {
@@ -1163,31 +1113,36 @@ footer {
     font-size: 30px;
   }
 
-  .main-board {
-    width: 612px;
-    height: 336px;
-  }
-
-  .main-board-borders {
-    width: 615px;
-    height: 340px;
-    top: -2px;
-  }
-
-  .side-board {
-    right: 65px;
-  }
-
-  .projects-nav {
-    right: 25px;
-  }
-
   .project-name {
     font-size: 20px;
   }
 
   .project-description {
     font-size: 14px;
+  }
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 22px;
+    margin: 0 20px;
+  }
+
+  .fa-circle {
+    font-size: 15px;
+    margin: 0px 18px;
+  }
+
+  .work-with-us {
+    padding: 0 0 75px 30px;
+  }
+
+  .heading-sub-wrapper {
+    width: 45%;
+  }
+
+  .card-outter {
+    width: 350px;
+    height: 235px;
   }
 
   .work-heading {
@@ -1200,18 +1155,6 @@ footer {
 
   .work-email-wrapper {
     margin-top: 45px;
-  }
-
-  .card-outter {
-    width: 305px;
-    height: 200px;
-  }
-
-  .card-inner {
-    right: -2px;
-    width: 303px;
-    height: 196px;
-    padding: 120px 0 0 35px;
   }
 
   .lets-connect__heading {
@@ -1231,7 +1174,7 @@ footer {
   }
 
   footer {
-    width: 720px;
+    width: 100%;
   }
 
   .social-network-contacts i {
@@ -1290,10 +1233,11 @@ footer {
   }
 
   #main {
-    width: 560px;
+    width: 100%;
   }
 
   .special-introduction {
+    position: relative;
     padding: 0 10px 70px 10px;
   }
 
@@ -1302,17 +1246,8 @@ footer {
   }
 
   .special-heading {
-    font-size: 25px;
-  }
-
-  .speacial-sub-heading {
-    position: relative;
-    font-size: 20px;
-  }
-
-  .fa-long-arrow-alt-right {
-    position: absolute;
-    right: -30px;
+    font-size: 24px;
+    line-height: 1.6;
   }
 
   .special-services {
@@ -1320,7 +1255,8 @@ footer {
   }
 
   .special-description {
-    font-size: 20px;
+    font-size: 18px;
+    width: 60%;
   }
 
   .service-card {
@@ -1344,7 +1280,12 @@ footer {
   }
 
   .raised-heading {
-    font-size: 28px;
+    font-size: 24px;
+  }
+
+  .raised-text {
+    width: 100%;
+    font-size: 18px;
   }
 
   .interests {
@@ -1359,6 +1300,8 @@ footer {
     width: 100%;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    padding-right: 0;
+    box-shadow: 0px 8px 15px -8px rgb(83, 83, 83);
   }
 
   .main-board {
@@ -1368,13 +1311,11 @@ footer {
   }
 
   .side-board {
-    right: 10px;
-    width: 145px;
-    padding: 10px 10px;
+    right: 2%;
   }
 
   .projects {
-    padding-bottom: 120px;
+    padding-bottom: 30px;
   }
 
   .project-name {
@@ -1385,61 +1326,36 @@ footer {
     font-size: 15px;
   }
 
-  .projects-nav {
-    margin: 20px;
-    right: 70px;
-    top: 345px;
-    flex-direction: row;
-  }
-
   .fa-circle {
-    font-size: 10px;
-    margin: 0 15px;
-  }
-
-  .fa-angle-up,
-  .fa-angle-down {
-    transform: rotate(-90deg);
-    font-size: 22px;
-  }
-
-  .heading-sub-wrapper {
-    position: relative;
+    font-size: 15px;
   }
 
   .work-with-us {
     flex-direction: column;
-    padding-bottom: 120px;
   }
 
-  .work-heading {
-    font-size: 28px;
-  }
-
-  .work-email-wrapper {
-    position: absolute;
-    margin: 0;
-    width: 79%;
-    top: 455px;
-    right: -80px;
-    border-right: none;
-  }
-
-  .rep-card {
+  .heading-sub-wrapper {
     position: relative;
-    right: -175px;
-    top: 0px;
-    width: 355px;
+    width: 70%
   }
 
   .card-outter {
-    width: 355px;
-    height: 216px;
+    position: relative;
+    margin-top: 50px;
+    width: 70%;
+    right: -30%;
   }
 
   .card-inner {
-    width: 353px;
-    height: 212px;
+    padding: 150px 0 0 50px;
+  }
+
+  .work-heading {
+    font-size: 25px;
+  }
+
+  .work-text {
+    font-size: 18px;
   }
 
   .lets-connect {
@@ -1447,7 +1363,7 @@ footer {
   }
 
   .lets-connect__heading {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .lets-connect__post-heading {
@@ -1489,7 +1405,7 @@ footer {
   }
 
   footer {
-    width: 560px;
+    width: 100%;
   }
 
   .social-network-contacts {
@@ -1583,7 +1499,7 @@ footer {
   }
 
   #main {
-    width: 430px;
+    width: 100%;
   }
 
   .special {
@@ -1591,7 +1507,7 @@ footer {
   }
 
   .special-introduction {
-    padding: 0 15px 70px 15px;
+    padding: 0 15px 65px 15px;
     flex-direction: column;
   }
 
@@ -1603,31 +1519,24 @@ footer {
   }
 
   .special-heading {
-    width: 95%;
+    width: 100%;
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-
-  .fa-long-arrow-alt-right {
-    display: none;
-  }
-
-  .speacial-sub-heading {
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
   }
 
   .special-description {
     width: 100%;
-    font-size: 22px;
+    font-size: 21px;
     line-height: 1.5;
-    text-align: start;
+    text-align: center;
   }
 
   .special-services {
     display: flex;
     flex-direction: column;
-    padding: 60px 0 0 0;
+    padding: 60px 0 60px 0;
     position: relative;
     height: 100%;
   }
@@ -1646,6 +1555,14 @@ footer {
     margin: 20px 0;
     margin: 25px auto;
     border-radius: 10px;
+  }
+
+  .left {
+    left: 8%;
+  }
+
+  .right {
+    right: 8%;
   }
 
   .card-heading {
@@ -1672,7 +1589,7 @@ footer {
 
   .raised-text {
     width: 100%;
-    font-size: 20px;
+    font-size: 21px;
   }
 
   .interests {
@@ -1691,35 +1608,29 @@ footer {
   }
 
   .icon-wrapper {
-    margin: 20px;
+    margin: 20px 0px;
+    width: 40%;
   }
 
   .side-board {
     display: none;
   }
 
-  .projects-nav {
-    margin: 20px auto;
-    right: 50%;
-    transform: translate(50%);
-  }
-
-  .fa-angle-up,
-  .fa-angle-down {
-    font-size: 50px;
-  }
-
   .fa-circle {
     font-size: 15px;
   }
 
-  .work-with-us {
-    flex-direction: column;
-    padding: 0 30px 200px 30px;
+  .project-details {
+    right: 3%;
   }
 
   .work-heading {
     font-size: 30px;
+  }
+
+  .work-text {
+    font-size: 21px;
+    line-height: 1.4;
   }
 
   .heading-sub-wrapper {
@@ -1734,12 +1645,9 @@ footer {
   }
 
   .work-email-wrapper {
-    width: 355px;
-    right: -30px;
-    top: 490px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    width: 90%;
   }
+
 
   .lets-connect {
     padding: 40px 15px 100px 15px;
@@ -1752,6 +1660,7 @@ footer {
   .lets-connect__post-heading {
     width: 100%;
     font-weight: 500;
+    font-size: 14px;
   }
 
   .lets-connect__content {
@@ -1767,7 +1676,7 @@ footer {
   }
 
   footer {
-    width: 430px;
+    width: 100%;
   }
 
   .footer-link {
@@ -1820,44 +1729,14 @@ footer {
     margin: 40px 0 0 0;
   }
 
-  #main {
-    width: 320px;
-  }
-
-  .special-introduction {
-    padding: 0 15px 45px 15px;
-  }
-
   .special-heading {
     width: 100%;
     font-size: 25px;
   }
 
-  .speacial-sub-heading {
-    font-size: 20px;
-    position: relative;
-    top: 320px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
   .special-description {
-    font-size: 20px;
+    font-size: 21px;
     line-height: 1.4;
-    position: relative;
-    top: -80px;
-  }
-
-  .fa-arrow-down {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 0;
-    width: 35px;
-    height: 35px;
-    top: 310px;
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.7);
   }
 
   .special-services {
@@ -1923,35 +1802,16 @@ footer {
   }
 
   .work-with-us {
-    padding: 0 15px 150px 15px;
+    padding: 0 0 150px 15px;
   }
 
   .work-heading {
     font-size: 25px;
   }
 
-  .work-email-wrapper {
-    width: 320px;
-    right: -15px;
-    top: 520px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: none;
-  }
-
-  .rep-card {
-    position: relative;
-    right: -45px;
-    top: 5px;
-    width: 260px;
-  }
-
   .card-outter {
-    width: 260px;
-  }
-
-  .card-inner {
-    width: 258px;
+    width: 80%;
+    right: -20%;
   }
 
   .lets-connect__heading {
@@ -1960,10 +1820,6 @@ footer {
 
   .control-input {
     width: 100%;
-  }
-
-  footer {
-    width: 320px;
   }
 
   .footer-link {
