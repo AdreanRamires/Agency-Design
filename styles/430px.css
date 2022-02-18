@@ -1,0 +1,133 @@
+.mobile-nav {
+  padding: 20px 20px 0 0;
+}
+
+.ham-line {
+  width: 35px;
+  margin: 2.5px;
+}
+
+.main-heading {
+  font-size: 45px;
+  margin: 30px 0px 20px 0;
+}
+
+.sub-heading {
+  top: 135px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.heading-btn-wrapper {
+  top: 220px;
+}
+
+.heading-btn {
+  width: 230px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+.bg-shapes-wrapper {
+  width: 320px;
+}
+
+.mobile-nav-link {
+  font-size: 18px;
+}
+
+.mobile-nav-ul {
+  margin: 40px 0 0 0;
+}
+
+/* SPECIAL STYLES */
+
+.special-heading {
+  width: 100%;
+  font-size: 25px;
+}
+
+.special-description {
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+/* SERVICES STYLES */
+
+.service-card__heading {
+  font-size: 22px;
+}
+
+.service-card__text {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.service-card__icon-wrapper {
+  margin: 10px;
+}
+
+/* RAISED STYLES */
+
+.raised {
+  padding: 0 15px;
+}
+
+.raised-heading {
+  font-size: 25px;
+}
+
+.raised-text {
+  line-height: 1.4;
+}
+
+/* VALUES STYLES */
+
+.values {
+  padding: 0 15px;
+}
+
+/* PROJECTS STYLES */
+
+.project-details {
+  right: 10px;
+  top: 220px;
+}
+
+.project-name {
+  font-size: 20px;
+}
+
+.project-description {
+  font-size: 14px;
+}
+
+.fa-circle {
+  font-size: 10px;
+  margin: 0 10px;
+}
+
+/* MEMBERS STYLES */
+
+.team-members__heading {
+  font-size: 25px;
+}
+
+.team-members__card-outter {
+  width: 80%;
+  right: -20%;
+}
+
+/* LET'S CONNECT STYLES */
+
+.lets-connect__heading {
+  font-size: 25px;
+}
+
+.control-input {
+  width: 100%;
+}
+
+.footer-link {
+  margin: 0 10px;
+}

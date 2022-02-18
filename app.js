@@ -6,20 +6,24 @@ const appStates = {
 };
 
 document.addEventListener("click", (e) => {
-  if (e.target.className == 'hamburger-menu' || e.target.className == 'ham-line') {
+  if (
+    e.target.className == "hamburger-menu" ||
+    e.target.className == "ham-line"
+  ) {
     if (appStates.menuOpenClosed) {
       appStates.menuOpenClosed = false;
-      mobileNavMenu.style.display = 'none';      
-    }
-    else {
+      mobileNavMenu.style.display = "none";
+    } else {
       appStates.menuOpenClosed = true;
-      mobileNavMenu.style.display = 'flex';
+      mobileNavMenu.style.display = "flex";
     }
-  }else {
+  } else {
     if (appStates.menuOpenClosed) {
       appStates.menuOpenClosed = false;
-      mobileNavMenu.style.display = 'none';
+      mobileNavMenu.style.display = "none";
     }
   }
-  
 });
+
+const imagesArr = ["./kanbanize.png", "./map-dummy-ohne-hand.png"];
+const mainBoardDisplay = document.getElementById("main-board");

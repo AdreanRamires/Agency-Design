@@ -1,0 +1,232 @@
+.main-nav {
+  width: 560px;
+}
+
+.nav-link {
+  margin: 0 20px;
+}
+
+.main-heading {
+  font-size: 70px;
+}
+
+.sub-heading {
+  top: 190px;
+}
+
+.heading-btn-wrapper {
+  top: 255px;
+}
+
+.bg-shapes-wrapper {
+  width: 560px;
+}
+
+.bg-shape__circle-xxl {
+  width: 275px;
+  height: 275px;
+  right: -155px;
+  top: 285px;
+}
+
+.bg-shape__circle-xl {
+  left: -75px;
+}
+
+.bg-shape__circle-md {
+  width: 100px;
+  height: 100px;
+  top: 320px;
+  left: -30px;
+}
+
+.bg-shape__circle-s {
+  top: 315px;
+  left: 190px;
+}
+
+#main {
+  width: 100%;
+}
+
+/* SPECIAL STYLES */
+
+.special-heading {
+  width: 25%;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.special-description {
+  font-size: 18px;
+  width: 60%;
+}
+
+/* SERVICES */
+
+.service-card {
+  width: 30%;
+}
+
+.service-card__text {
+  font-size: 17px;
+}
+
+.service-card__left {
+  left: 2%;
+}
+
+.service-card__right {
+  right: 2%;
+}
+
+/* RAISED STYLES */
+
+.white-section {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.raised-heading {
+  font-size: 24px;
+}
+
+.raised-text {
+  font-size: 18px;
+}
+
+/* VALUES STYLES */
+
+.value__icon-text {
+  text-align: center;
+}
+
+/* PROJECTS STYLES */
+
+.projects__display-outter {
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 0;
+  box-shadow: 0px 8px 15px -8px rgb(83, 83, 83);
+}
+
+.projects__display-inner {
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.projects__name {
+  font-size: 22px;
+}
+
+.projects__description {
+  font-size: 15px;
+}
+
+.projects__side-board {
+  right: 2%;
+}
+
+.fa-circle {
+  font-size: 15px;
+}
+
+/* TEAM MEMBERS STYLES */
+
+.team-members {
+  flex-direction: column;
+}
+
+.team-members__details {
+  position: relative;
+  width: 70%;
+}
+
+.team-members__heading {
+  font-size: 25px;
+}
+
+.team-members__text {
+  font-size: 18px;
+}
+
+.team-members__card-outter {
+  position: relative;
+  margin-top: 50px;
+  width: 70%;
+  right: -30%;
+}
+
+.team-members__card-inner {
+  padding: 150px 0 0 50px;
+}
+
+/* LET'S CONNECT STYLES */
+
+.lets-connect {
+  padding: 40px 0 100px 0;
+}
+
+.lets-connect__heading {
+  font-size: 25px;
+}
+
+.lets-connect__sub-heading {
+  width: 80%;
+}
+
+.lets-connect__content {
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.lets-connect__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.control-label {
+  font-size: 18px;
+}
+
+.control-input {
+  width: 450px;
+  font-size: 20px;
+  padding: 12px 10px;
+}
+
+.lets-connect__submit-btn {
+  width: 60%;
+}
+
+.map-location {
+  order: 1;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* FOOTER STYLES */
+
+footer {
+  width: 100%;
+}
+
+.social-network-contacts {
+  right: 50%;
+  top: -60px;
+  transform: translate(50%);
+}
+
+.social-network-contacts i {
+  font-size: 35px;
+  margin: 0 20px;
+}
+
+.rights {
+  margin-top: 30px;
+}
