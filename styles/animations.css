@@ -1,9 +1,51 @@
+/* TOP NAVIGATION LINKS APPERIENCE */
+
+.nav-li {
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  animation-name: "nav-li";
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-li {
+  from {
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.nav-li:nth-child(1) {
+  animation-delay: 750ms;
+}
+
+.nav-li:nth-child(2) {
+  animation-delay: 1000ms;
+}
+
+.nav-li:nth-child(3) {
+  animation-delay: 1250ms;
+}
+
+.nav-li:nth-child(4) {
+  animation-delay: 1500ms;
+}
+
+/* TOP NAVIGATION LINKS UNDERSCORE */
+
 .nav-link {
   position: relative;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
 .nav-li:hover .nav-link::before {
-  animation-name: "top-nav-underscore";
+  animation-name: "top-nav-underscore-forward";
   animation-direction: normal;
 }
 
@@ -15,21 +57,152 @@
   background: rgba(255, 255, 255, 0.3);
   bottom: -6px;
   opacity: 0;
-  animation-duration: 800ms;
-  animation-direction: reverse;
+  animation-duration: 600ms;
+  animation-name: "top-nav-underscore-reversed";
   animation-fill-mode: forwards;
   transition: 0.6ms;
 }
 
-@keyframes top-nav-underscore {
+@keyframes top-nav-underscore-reversed {
   0% {
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
     opacity: 0;
     width: 0%;
   }
+}
 
-  100% {
+@keyframes top-nav-underscore-forward {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
     opacity: 1;
     width: 100%;
-    
   }
+}
+
+/* HEADER CIRCLES */
+
+.bg-shape__circle-xxl,
+.bg-shape__circle-xl,
+.bg-shape__circle-md,
+.bg-shape__circle-s {
+  transition: 800ms;
+  animation-name: "circle";
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circle {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.bg-shape__circle-xxl {
+  opacity: 0;
+  animation-delay: 150ms;
+}
+
+.bg-shape__circle-xl {
+  opacity: 0;
+}
+
+.bg-shape__circle-md {
+  opacity: 0;
+  animation-delay: 300ms;
+}
+
+.bg-shape__circle-s {
+  opacity: 0;
+  animation-delay: 450ms;
+}
+
+/* MAIN HEADING */
+
+.main-heading {
+  top: 500px;
+  opacity: 0;
+  transition: 800ms;
+  animation-name: "main-heading";
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+  animation-delay: 150ms;
+}
+
+@keyframes main-heading {
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.sub-heading {
+  opacity: 0;
+  transition: 800ms;
+  animation-name: "sub-heading";
+  animation-duration: 1200ms;
+  animation-fill-mode: forwards;
+  animation-delay: 400ms;
+}
+
+@keyframes sub-heading {
+  from {
+    top: 740px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* MAIN HEADING - BUTTONS */
+
+.btn-black,
+.btn-white {
+  position: relative;
+  opacity: 0;
+  top: 0;
+  transition: 200ms;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1900ms;
+}
+
+.btn-black {
+  left: -150px;
+  animation-name: "btn-black";
+}
+
+.btn-white {
+  right: -150px;
+  animation-name: "btn-white";
+}
+
+@keyframes btn-black {
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes btn-white {
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.btn-black:hover,
+.btn-white:hover {
+  box-shadow: 0 10px 15px -10px rgb(0, 0, 0);
+  top: -3px;
 }
