@@ -10,8 +10,6 @@
 }
 
 @keyframes nav-li {
-  from {
-  }
   to {
     top: 0;
     opacity: 1;
