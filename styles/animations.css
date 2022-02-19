@@ -4,9 +4,9 @@
   position: relative;
   top: -50px;
   opacity: 0;
-  animation-name: "nav-li";
-  animation-duration: 400ms;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: "nav-li";
+  -webkit-animation-duration: 400ms;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes nav-li {
@@ -17,19 +17,19 @@
 }
 
 .nav-li:nth-child(1) {
-  animation-delay: 750ms;
+  -webkit-animation-delay: 750ms;
 }
 
 .nav-li:nth-child(2) {
-  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
 }
 
 .nav-li:nth-child(3) {
-  animation-delay: 1250ms;
+  -webkit-animation-delay: 1250ms;
 }
 
 .nav-li:nth-child(4) {
-  animation-delay: 1500ms;
+  -webkit-animation-delay: 1500ms;
 }
 
 /* TOP NAVIGATION LINKS UNDERSCORE */
@@ -43,8 +43,8 @@
 }
 
 .nav-li:hover .nav-link::before {
-  animation-name: "top-nav-underscore-forward";
-  animation-direction: normal;
+  -webkit-animation-name: "top-nav-underscore-forward";
+  -webkit-animation-direction: normal;
 }
 
 .nav-link::before {
@@ -55,10 +55,10 @@
   background: rgba(255, 255, 255, 0.3);
   bottom: -6px;
   opacity: 0;
-  animation-duration: 600ms;
-  animation-name: "top-nav-underscore-reversed";
-  animation-fill-mode: forwards;
   transition: 0.6ms;
+  -webkit-animation-duration: 600ms;
+  -webkit-animation-name: "top-nav-underscore-reversed";
+  -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes top-nav-underscore-reversed {
@@ -90,9 +90,9 @@
 .bg-shape__circle-md,
 .bg-shape__circle-s {
   transition: 800ms;
-  animation-name: "circle";
-  animation-duration: 800ms;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: "circle";
+  -webkit-animation-duration: 800ms;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes circle {
@@ -108,7 +108,7 @@
 
 .bg-shape__circle-xxl {
   opacity: 0;
-  animation-delay: 150ms;
+  -webkit-animation-delay: 150ms;
 }
 
 .bg-shape__circle-xl {
@@ -117,12 +117,12 @@
 
 .bg-shape__circle-md {
   opacity: 0;
-  animation-delay: 300ms;
+  -webkit-animation-delay: 300ms;
 }
 
 .bg-shape__circle-s {
   opacity: 0;
-  animation-delay: 450ms;
+  -webkit-animation-delay: 450ms;
 }
 
 /* MAIN HEADING */
@@ -131,10 +131,10 @@
   top: 500px;
   opacity: 0;
   transition: 800ms;
-  animation-name: "main-heading";
-  animation-duration: 1200ms;
-  animation-fill-mode: forwards;
-  animation-delay: 150ms;
+  -webkit-animation-name: "main-heading";
+  -webkit-animation-duration: 1200ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 150ms;
 }
 
 @-webkit-keyframes main-heading {
@@ -147,10 +147,10 @@
 .sub-heading {
   opacity: 0;
   transition: 800ms;
-  animation-name: "sub-heading";
-  animation-duration: 1200ms;
-  animation-fill-mode: forwards;
-  animation-delay: 400ms;
+  -webkit-animation-name: "sub-heading";
+  -webkit-animation-duration: 1200ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 400ms;
 }
 
 @-webkit-keyframes sub-heading {
@@ -170,19 +170,19 @@
   opacity: 0;
   top: 0;
   transition: 200ms;
-  animation-duration: 300ms;
-  animation-fill-mode: forwards;
-  animation-delay: 1900ms;
+  -webkit-animation-duration: 300ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1900ms;
 }
 
 .btn-black {
   left: -150px;
-  animation-name: "btn-black";
+  -webkit-animation-name: "btn-black";
 }
 
 .btn-white {
   right: -150px;
-  animation-name: "btn-white";
+  -webkit-animation-name: "btn-white";
 }
 
 @-webkit-keyframes btn-black {
